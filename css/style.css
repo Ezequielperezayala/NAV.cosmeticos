@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to left bottom, #e3014a, #ed2840, #f63f34, #fb5527, #ff6914);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar__edit a{
+    color: wheat;
+}
+
+.navbar__edit a:hover{
+    color: white;
+    transition: 0.5s;
+}
+/* ---- Home ----*/
+
+.edit__h1{
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.edit__h1 h1{
+    margin-top: 50px;
+    width: 400px;
+    text-transform: capitalize;
+    margin-bottom: 100px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.edit__h1 span{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    color: white;
+
+}
+
+.edit__h1 a{
+    text-decoration: none;
+    border-radius: 50px 0px 50px 0px;
+    background-color: #e3014a;
+    padding: 20px;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.75rem;
+}
+
+.edit__h1 a:hover{
+    box-shadow: 10px 10px 15px 0px rgba(255,255,255,1);
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.hero__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__img img{
+    width: 450px;
+}
+
+
+.text__edit{
+    font-size: 3.5rem;
+}
+
+/*---- About----*/
+
+.about__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.about__text h3{
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-shadow: -10px 5px 15px black;
+}
+.about__text p{
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-shadow: -10px 5px 15px black;
+}
+
+.about__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__img img{
+    width: 350px;
+    filter: drop-shadow(0 0 15px rgba(255,255,255,1));
+}
+
+/*---- Media Query ----*/
+@media (max-width: 768px) {
+    .edit__h1 h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .edit__h1 a{
+        font-size: 1.5rem;
+    }
+    .hero__img img{
+        width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .edit__h1 h1 {
+      font-size: 1.75rem; 
+      width: 200px;
+    }
+
+    .edit__h1 a{
+        font-size: 1.3rem;   
+    }
+    .hero__img img{
+        width: 250px;
+    }
+}
