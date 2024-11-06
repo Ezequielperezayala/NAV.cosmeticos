@@ -8,8 +8,8 @@ body{
     background-image: linear-gradient(to left bottom, #e3014a, #ed2840, #f63f34, #fb5527, #ff6914);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 .navbar__edit a{
@@ -20,7 +20,7 @@ body{
     color: white;
     transition: 0.5s;
 }
-/* ---- Home ----*/
+/* ---- Home ---- */
 
 .edit__h1{
     padding: 0px 100px;
@@ -87,7 +87,7 @@ body{
     font-size: 3.5rem;
 }
 
-/*---- About----*/
+/* ---- About ---- */
 
 .about__text{
     display: flex;
@@ -95,6 +95,7 @@ body{
     align-items: center;
     justify-content: center;
     padding: 50px;
+    margin-top: 5%;
 }
 
 .about__text h3{
@@ -105,6 +106,7 @@ body{
     text-shadow: -10px 5px 15px black;
 }
 .about__text p{
+   
     text-align: center;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
@@ -118,12 +120,43 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5%;
 }
 
 .about__img img{
     width: 350px;
     filter: drop-shadow(0 0 15px rgba(255,255,255,1));
 }
+
+/* ---- Products ---- */
+
+.text__products{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: -2px 4px 5px rgba(255,255,255,0.7);
+    color: wheat;
+}
+
+.text__word{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    color: white;
+}
+
+.btn-primary{
+    background-color: #e3014a;
+    border-color: #e3014a;
+}
+
+.btn-primary:hover{
+    background-color: #bd023d;
+    border-color: #e3014a;
+}
+
 
 /*---- Media Query ----*/
 @media (max-width: 768px) {
